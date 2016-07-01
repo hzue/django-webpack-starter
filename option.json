@@ -1,0 +1,5 @@
+{
+    "webpackPort": 6543,
+    "djangoPort": 7654,
+    "websocketPort": 5432
+}

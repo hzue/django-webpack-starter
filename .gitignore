@@ -1,0 +1,15 @@
+/* Django */
+db.*
+*.pyc
+*/migrations
+bundles
+dist
+
+/* package manager - npm & bower */
+bower_components
+node_modules
+npm-debug.log
+
+/* webpack */
+webpack-stats.json
+webpack-stats-prod.json
