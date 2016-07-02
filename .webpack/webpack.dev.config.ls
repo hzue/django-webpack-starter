@@ -5,13 +5,13 @@ config = require './webpack.base.config.ls'
 config.plugins = config.plugins.concat [
   new webpack.HotModuleReplacementPlugin!,
   new webpack.NoErrorsPlugin!,
-  new BundleTracker { filename: './webpack-stats.json' },
+  new BundleTracker { filename: './.webpack/webpack-stats.json' },
 ]
 
 config.dev-server =
   content-base: './assets/bundles/'
-  public-path: '/assets/bundles'
-  hot: true
+  public-path: '/static/bundles'
+  hot: false
   inline: true
   stats:
     chunkModules: false

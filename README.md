@@ -21,12 +21,12 @@
   ```
 * Run webpack
 
-  * For using django redner jade
+  * For just build file & watch
     ```
     npm run watch
     ```
 
-  * For using React.js without django render (run dev-server and proxy to django server)
+  * For dev-server
     ```
     npm run dev
     ```

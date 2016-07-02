@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node_modules/.bin/webpack --config webpack.dev.config.ls --progress --colors --watch",
-    "dev": "node_modules/.bin/lsc dev-server.ls",
-    "prod": "node_modules/.bin/webpack --config webpack.prod.config.ls --progress --colors"
+    "watch": "node_modules/.bin/webpack --config .webpack/webpack.dev.config.ls --progress --colors --watch",
+    "dev": "node_modules/.bin/lsc ./.webpack/dev-server.ls",
+    "prod": "node_modules/.bin/webpack --config ./.webpack/webpack.prod.config.ls --progress --colors"
   },
   "author": "",
   "license": "ISC",

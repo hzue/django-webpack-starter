@@ -4,11 +4,11 @@ BundleTracker = require \webpack-bundle-tracker
 module.exports =
   context: __dirname
   entry:
-    example: <[./assets/example/index.ls]>
+    example: [path.resolve './assets/example/App.jsx']
   output:
     path: path.resolve './assets/bundles/'
     filename: "[name]-[hash].js"
-  plugins: []
+  plugins: [new webpack.Provide-plugin jQuery: \jquery $: \jquery app: \app React: \react]
   module:
     loaders:
       * test: /\.css$/  loader: \style!css
@@ -26,7 +26,6 @@ module.exports =
     no-parse: /jquery|react.js/
   resolve:
     alias:
-      app: \app.ls
       jquery: \jquery/dist/jquery.min.js
       react: \react/dist/react.js
       react-dom: \react-dom/dist/react-dom.js
